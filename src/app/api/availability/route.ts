@@ -34,9 +34,10 @@ interface AvailabilityResponse {
 // --- End Interfaces ---
 
 export async function GET(request: NextRequest) {
-  const db = getDatabase();
+  
 
   try {
+    const db = getDatabase();
     // --- Get and Validate Query Parameters ---
     const searchParams = request.nextUrl.searchParams;
     const packageIdStr = searchParams.get('packageId');
