@@ -6,7 +6,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 // Keep this if other routes need it, but it's likely safe to comment if unused now
 // export const dynamic = 'force-dynamic';
-export const runtime = 'edge'
+
 interface OrderRequestBody {
     bookingId: number;
     amount: number;

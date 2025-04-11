@@ -1,7 +1,7 @@
 // Path: .\src\app\api\availability\route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database';
-export const runtime = 'edge'
+
 // Removed runtime = 'edge'
 
 // --- Define Interfaces ---

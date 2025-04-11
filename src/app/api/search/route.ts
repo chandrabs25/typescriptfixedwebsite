@@ -1,7 +1,7 @@
 // src/app/api/search/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database';
-export const runtime = 'edge'
+
 // Removed runtime = 'edge' to allow proper D1 database access
 
 // --- Define Interfaces for DB Results and Search Results ---
