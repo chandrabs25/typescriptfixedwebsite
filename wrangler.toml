@@ -19,7 +19,7 @@ pages_build_output_dir = ".vercel/output/static"
 [[d1_databases]]
 binding = "DB" # This binding name MUST match what your code expects (e.g., env.DB)
 database_name = "data" # The name you gave your D1 DB in Cloudflare
-database_id = "1963d118-936f-47d0-9510-daac24677966" # The actual ID of your D1 DB
+database_id = "10ad77f4-c112-447e-9a5d-1622b5829110" # The actual ID of your D1 DB
 
 # KV Namespace binding (Example)
 # [[kv_namespaces]]
