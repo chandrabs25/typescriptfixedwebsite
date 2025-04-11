@@ -1,7 +1,7 @@
 // Path: .\src\app\api\availability\route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database';
-const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic';
 // Removed runtime = 'edge'
 
 // --- Define Interfaces ---
