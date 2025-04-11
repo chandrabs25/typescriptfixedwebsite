@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
 import { getDatabase } from '@/lib/database'; // Ensure correct import
-
+const dynamic = 'force-dynamic'
 // Removed runtime = 'edge'
 
 // Interface for request body

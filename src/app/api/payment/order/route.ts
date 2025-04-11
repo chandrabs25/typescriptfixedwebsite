@@ -4,7 +4,7 @@ import Razorpay from 'razorpay';
 // --- FIX: Import getDatabase instead of db ---
 import { getDatabase } from '@/lib/database';
 // --- End of FIX ---
-
+const dynamic = 'force-dynamic'
 // Removed runtime = 'edge' to allow Node.js dependencies like Razorpay
 
 // Define interface for request body

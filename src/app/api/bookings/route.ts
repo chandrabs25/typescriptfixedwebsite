@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database';
 import { verifyAuth } from '@/lib/auth'; // Import verifyAuth to check login status
-
+const dynamic = 'force-dynamic'
 // --- FIX: Remove Edge Runtime ---
 // export const runtime = 'edge'; // Remove: Needs DB access & potentially auth logic
 
