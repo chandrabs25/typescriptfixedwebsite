@@ -24,15 +24,18 @@ interface Island {
 
 // --- FIX: Implement GET handler ---
 export async function GET(request: NextRequest) {
+   console.log("--- GET /api/destinations Request Started ---"); 
   try {
     const db = getDatabase(); // Get the database instance
-
+    console.log("Database handle obtained.");
     // Fetch all islands from the database
     // Ensure your D1 schema has an 'islands' table with appropriate columns
     const { results, success, error } = await db.prepare(
         'SELECT * FROM islands ORDER BY name ASC' // Fetch all columns, order by name
       )
       .all<Island>(); // Specify the expected row type
+     console.log(`Query success: ${success}, Error: ${error}`); // Add this
+    console.log("Islands results:", JSON.stringify(results, null, 2));
 
     if (!success) {
         console.error('Failed to fetch islands from D1:', error);

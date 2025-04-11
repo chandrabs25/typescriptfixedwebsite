@@ -19,14 +19,15 @@ import { getJwtSecret } from '@/lib/auth';
 
 // Login with credentials
 export async function POST(request: NextRequest) {
+  console.log("--- POST /api/auth/login Request Started ---");
   try {
     // --- FIX: Get database instance ---
     const db = getDatabase();
     // --- End of FIX ---
-
+    console.log("Login: DB handle obtained.");
     // Parse request body with type assertion
     const { email, password } = await request.json() as LoginRequestBody;
-
+     console.log(`Login attempt for email: ${email}`); 
     // Validation
     if (!email || !password) {
       return NextResponse.json(
@@ -40,7 +41,7 @@ export async function POST(request: NextRequest) {
       .prepare('SELECT * FROM users WHERE email = ?')
       .bind(email)
       .first<any>(); // Use <any> or a specific User type if defined
-
+     console.log("User found:", user ? `ID ${user.id}` : 'No user found'); 
     if (!user) {
       return NextResponse.json(
         { success: false, message: 'Invalid credentials' },
@@ -50,6 +51,7 @@ export async function POST(request: NextRequest) {
 
     // Check password - Ensure user.password_hash exists and is the correct field name
     if (!user.password_hash) {
+      console.log("Login failed: Invalid credentials (user not found or no hash)."); 
       // Handle cases where user might exist but has no password (e.g., OAuth user)
       return NextResponse.json(
         { success: false, message: 'Invalid credentials (no password set)' },
@@ -59,8 +61,9 @@ export async function POST(request: NextRequest) {
 
     // Use bcrypt to compare the provided password with the stored hash
     const isPasswordValid = await bcrypt.compare(password, user.password_hash);
-
+    console.log(`Password valid: ${isPasswordValid}`);
     if (!isPasswordValid) {
+      console.log("Login failed: Password mismatch.");
       return NextResponse.json(
         { success: false, message: 'Invalid credentials' },
         { status: 401 }
@@ -69,7 +72,7 @@ export async function POST(request: NextRequest) {
 
     // Remove password hash from response
     const { password_hash, ...userWithoutPassword } = user;
-
+     console.log("Password OK, generating token...");
     // Generate JWT token with proper signature
     const token = await new jose.SignJWT({
       // Ensure payload matches expected User structure for useAuth
@@ -83,7 +86,7 @@ export async function POST(request: NextRequest) {
       .setIssuedAt()
       .setExpirationTime('24h') // Token expires in 24 hours
       .sign(getJwtSecret());
-
+     console.log("Token generated.");
     // Set cookie with the token
     const response = NextResponse.json({
       success: true,
