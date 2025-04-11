@@ -1,7 +1,9 @@
-// Path: .\src\app\packages\[id]\book\page.tsx
-/// <reference types="styled-jsx" />
 
 'use client';
+// Path: .\src\app\packages\[id]\book\page.tsx
+/// <reference types="styled-jsx" />
+export const runtime = 'edge'
+
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';

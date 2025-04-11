@@ -1,7 +1,7 @@
 // Path: src/app/api/vendors/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database'; // Import the function to get DB instance
-const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 // --- FIX: Remove Edge Runtime ---
 // export const runtime = 'edge'; // Remove this line to allow database access
 

@@ -1,0 +1,1 @@
+var n={},u=(i,t,s)=>(n.__chunk_7528=(a,e,r)=>{"use strict";function o(){if(process.env.DB)return process.env.DB;throw Error("D1 Database binding 'DB' not found in environment. Ensure you are running within a Cloudflare Pages/Workers environment with the binding configured, or using 'wrangler dev --local' which provides it.")}r.d(e,{N:()=>o})},n);export{u as __getNamedExports};

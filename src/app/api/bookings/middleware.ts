@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { requireAuth } from '@/lib/auth';
-const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 // Middleware to protect booking routes
 export async function withAuth(
   request: NextRequest,

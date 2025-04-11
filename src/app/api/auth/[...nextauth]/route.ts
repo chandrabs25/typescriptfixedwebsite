@@ -1,6 +1,6 @@
 // This file is kept for compatibility but not used in the new authentication system
 
-const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 export async function GET() {
   return new Response(JSON.stringify({ error: "This endpoint is deprecated" }), {
     status: 404,

@@ -1,6 +1,6 @@
 // Path: .\src\app\packages\[id]\page.tsx
 'use client';
-
+export const runtime = 'edge'
 import React, { useState, useEffect, Suspense } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';

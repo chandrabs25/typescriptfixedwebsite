@@ -6,7 +6,7 @@ import { getDatabase } from '@/lib/database';
 import * as jose from 'jose'; // Keep if needed for auto-login, though not used directly here
 import * as bcrypt from 'bcryptjs';
 // Removed runtime = 'edge' to allow Node.js dependencies
-const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 // Define an interface for the expected request body
 interface RegisterRequestBody {
   name: string;

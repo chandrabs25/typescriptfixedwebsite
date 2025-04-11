@@ -1,0 +1,26 @@
+{
+  "type": "Prerender",
+  "expiration": false,
+  "group": 7,
+  "bypassToken": "a0ba0dd2754effd6b8bd6364d048b3d0",
+  "experimentalBypassFor": [
+    {
+      "type": "header",
+      "key": "Next-Action"
+    },
+    {
+      "type": "header",
+      "key": "content-type",
+      "value": "multipart/form-data;.*"
+    }
+  ],
+  "fallback": {
+    "type": "FileFsRef",
+    "mode": 33188,
+    "fsPath": "dashboard.prerender-fallback.html"
+  },
+  "initialHeaders": {
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/user/layout,_N_T_/user/dashboard/layout,_N_T_/user/dashboard/page,_N_T_/user/dashboard"
+  },
+  "allowQuery": []
+}

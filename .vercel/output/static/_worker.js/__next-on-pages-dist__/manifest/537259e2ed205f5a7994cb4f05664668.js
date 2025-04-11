@@ -1,0 +1,1 @@
+var a={},t=(_,e,s)=>(a.__NEXT_FONT_MANIFEST=_.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/chandra/andaman_website_CLI/andaman website CLI/src/app/layout":["static/media/a34f9d1faa5f3315-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}',a.__REACT_LOADABLE_MANIFEST=_.__REACT_LOADABLE_MANIFEST="{}",a);export{t as __getNamedExports};

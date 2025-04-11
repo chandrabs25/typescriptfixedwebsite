@@ -1,6 +1,6 @@
 // Path: .\src\app\bookings\confirmation\[id]\page.tsx
 'use client';
-
+export const runtime = 'edge'
 import { useState, useEffect, Suspense } from 'react';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
