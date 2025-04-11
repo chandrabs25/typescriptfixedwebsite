@@ -1,4 +1,5 @@
 // Path: src/app/api/destinations/[id]/route.ts
+const dynamic = 'force-dynamic'
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database'; // Import the function to get DB instance
 

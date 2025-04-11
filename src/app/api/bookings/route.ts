@@ -1,4 +1,5 @@
 // Path: .\src\app\api\bookings\route.ts
+const dynamic = 'force-dynamic'
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database';
 import { verifyAuth } from '@/lib/auth'; // Import verifyAuth to check login status

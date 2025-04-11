@@ -1,4 +1,5 @@
 // Path: .\src\app\api\auth\login\route.ts
+const dynamic = 'force-dynamic'
 import { NextRequest, NextResponse } from 'next/server';
 // --- FIX: Import getDatabase ---
 import { getDatabase } from '@/lib/database';
