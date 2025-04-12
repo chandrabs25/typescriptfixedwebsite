@@ -1,6 +1,6 @@
 // Path: .\src\app\destinations\[id]\page.tsx
 'use client';
-export const runtime = 'edge'
+
 import { useEffect, useState, Suspense } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';

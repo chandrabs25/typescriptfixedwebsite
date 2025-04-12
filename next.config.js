@@ -51,3 +51,15 @@ const nextConfig = {
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
   }
 }
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Your other Next.js config options here...
+  reactStrictMode: true,
+};
+
+module.exports = withBundleAnalyzer(nextConfig);

@@ -1,6 +1,6 @@
 // Path: .\src\app\contact\page.tsx
 'use client';
-
+export const runtime = 'edge'; 
 import React, { useState, useRef } from 'react'; // Import React
 import Image from 'next/image';
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react'; // Added Loader2

@@ -1,6 +1,6 @@
 // Path: ./src/app/about/page.tsx
 'use client';
-
+export const runtime = 'edge'; 
 import Image from 'next/image';
 // Removed unused Link import, can add back if needed elsewhere
 // import Link from 'next/link';
