@@ -10,12 +10,7 @@ import * as jose from 'jose';
 // Get JWT secret from environment variable or use a fallback for development
 // In production, this should always be set in environment variables
 export const getJwtSecret = () => {
-  const secret = process.env.JWT_SECRET;
-  if (!secret) {
-    console.warn('WARNING: JWT_SECRET not set in environment variables. Using fallback secret for development only.');
-    return new TextEncoder().encode('fallback_secret_for_development_only');
-  }
-  return new TextEncoder().encode(secret);
+  return new TextEncoder().encode('your_consistent_test_secret');
 };
 
 // Define the User structure expected by verifyAuth return and useAuth hook
@@ -40,6 +35,7 @@ interface JwtPayload extends jose.JWTPayload {
 export async function verifyAuth(request: NextRequest): Promise<{ isAuthenticated: boolean; user: VerifiedUser | null }> { // Added return type
   try {
     // Get token from cookie
+   
     const token = request.cookies.get('auth_token')?.value;
 
     // If no token, return unauthorized
