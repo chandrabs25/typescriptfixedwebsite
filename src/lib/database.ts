@@ -3,6 +3,7 @@ import { D1Database } from '@cloudflare/workers-types';
 
 // --- Function to get the database instance ---
 export function getDatabase(): D1Database {
+  console.log("Attempting to get DB binding. process.env.DB:", typeof process.env.DB, process.env.DB ? Object.keys(process.env.DB) : 'undefined');
   // Check if the D1 binding is available via process.env (Node.js runtime in CF Pages/Workers)
   // Ensure 'DB' matches the binding name in wrangler.toml
   if (process.env.DB) {
