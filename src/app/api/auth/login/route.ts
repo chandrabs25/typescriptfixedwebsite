@@ -7,7 +7,7 @@ import { getDatabase } from '@/lib/database';
 import * as jose from 'jose';
 import * as bcrypt from 'bcryptjs';
 // Removed runtime = 'edge' to allow Node.js dependencies
-
+export const runtime = 'edge';
 // Define an interface for expected request body
 interface LoginRequestBody {
   email: string;
