@@ -54,9 +54,9 @@ export async function verifyAuth(request: NextRequest): Promise<{ isAuthenticate
 
     // Return authenticated user data
     const verifiedUser: VerifiedUser = {
-        id: payload.sub, // Use sub for id
-        email: payload.email,
-        role_id: payload.role_id // <--- FIXED: Use role_id from payload
+        id: payload.sub,
+    email: payload.email,
+    role_id: payload.role_id 
     };
 
     return {
