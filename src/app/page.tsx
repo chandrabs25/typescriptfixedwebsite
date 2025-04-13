@@ -42,7 +42,7 @@ export default function Home() {
       data: destinationsResponse,
       error: destinationsError,
       status: destinationsStatus
-  } = useFetch<GetDestinationsApiResponse>('/api/destinations'); // Fetch first 4
+  } = useFetch<GetDestinationsApiResponse>('/api/destinations?limit=4'); // Fetch first 4
   const featuredDestinationsData = destinationsResponse?.data || [];
 
   // --- Fetch Activities ---
@@ -50,7 +50,7 @@ export default function Home() {
       data: activitiesResponse,
       error: activitiesError,
       status: activitiesStatus
-  } = useFetch<GetActivitiesApiResponse>('/api/activities'); // Fetch first 4
+  } = useFetch<GetActivitiesApiResponse>('/api/activities?limit=4'); // Fetch first 4
   const popularActivitiesData = activitiesResponse?.data || [];
   // --- End Data Fetching ---
 
