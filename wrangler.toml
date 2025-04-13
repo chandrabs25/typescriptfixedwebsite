@@ -18,7 +18,7 @@ pages_build_output_dir =  ".next"
 # D1 Database binding
 [[d1_databases]]
 binding = "DB" 
-database_name = "version2"
+database_name = "version2"x
 database_id = "10ad77f4-c112-447e-9a5d-1622b5829110"
 
 # KV Namespace binding (Example)

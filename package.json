@@ -7,7 +7,8 @@
     "build": "rm -rf .next/cache/webpack && next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20230518.0",
