@@ -1,6 +1,6 @@
 // Path: .\src\app\packages\page.tsx
 'use client';
-
+export const dynamic = 'force-dynamic'
 import React, { useState, useEffect, Suspense } from 'react'; // Import Suspense
 import { useSearchParams } from 'next/navigation'; // Import useSearchParams
 import Link from 'next/link';

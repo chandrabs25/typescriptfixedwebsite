@@ -1,5 +1,5 @@
 // This file is kept for compatibility but not used in the new authentication system
-const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic'
 
 export async function GET() {
   return new Response(JSON.stringify({ error: "This endpoint is deprecated" }), {

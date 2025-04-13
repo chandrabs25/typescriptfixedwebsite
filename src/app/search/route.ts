@@ -1,7 +1,7 @@
 // src/app/search/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 
-// Add Edge Runtime configuration
+
 
 
 export async function GET(request: NextRequest) {

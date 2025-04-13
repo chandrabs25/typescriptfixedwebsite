@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import * as jose from 'jose';
-
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 // Get JWT secret from environment variable or use a fallback for development
 // In production, this should always be set in environment variables
 export const getJwtSecret = () => {

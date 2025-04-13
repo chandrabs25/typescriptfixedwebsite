@@ -1,6 +1,6 @@
 // Path: .\src\app\destinations\page.tsx
 'use client';
-
+export const dynamic = 'force-dynamic'
 import React, { useState, useEffect, Suspense } from 'react'; // Import Suspense
 import Link from 'next/link';
 import Image from 'next/image';

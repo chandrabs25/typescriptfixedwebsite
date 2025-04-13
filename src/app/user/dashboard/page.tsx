@@ -1,6 +1,6 @@
 // Path: .\src\app\user\dashboard\page.tsx
 'use client';
-
+export const dynamic = 'force-dynamic'
 import React, { useState, useEffect, Suspense } from 'react'; // Import useEffect, Suspense
 import Link from 'next/link';
 import { MapPin, Calendar, Clock, CreditCard, User, Star, Package, Bell, LogOut, Home, Users as UsersIcon, FileText, Shield, Loader2, AlertTriangle } from 'lucide-react';

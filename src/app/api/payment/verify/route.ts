@@ -1,5 +1,5 @@
 // src/app/api/payment/verify/route.ts
-const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic'
 import { NextRequest, NextResponse } from 'next/server';
 // Comment out imports specific to the disabled logic
 // import crypto from 'crypto';

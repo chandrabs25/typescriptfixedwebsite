@@ -1,5 +1,5 @@
 // src/app/api/vendors/[id]/route.ts
-const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic'
 import { NextRequest, NextResponse } from 'next/server';
 
 // Add Edge Runtime configuration

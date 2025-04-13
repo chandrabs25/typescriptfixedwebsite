@@ -1,6 +1,6 @@
 // Path: .\src\app\vendor\dashboard\page.tsx
 'use client';
-
+export const dynamic = 'force-dynamic'
 import React, { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';

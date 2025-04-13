@@ -1,4 +1,4 @@
-const dynamic = 'force-dynamic'// Path: .\src\app\api\auth\register\route.ts
+export const dynamic = 'force-dynamic'// Path: .\src\app\api\auth\register\route.ts
 import { NextRequest, NextResponse } from 'next/server';
 // --- FIX: Import getDatabase ---
 import { getDatabase } from '@/lib/database';
