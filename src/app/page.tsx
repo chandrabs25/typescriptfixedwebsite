@@ -42,7 +42,7 @@ export default function Home() {
       data: destinationsResponse,
       error: destinationsError,
       status: destinationsStatus
-  } = useFetch<GetDestinationsApiResponse>('/api/destinations?limit=4'); // Fetch first 4
+  } = useFetch<GetDestinationsApiResponse>('/api/destinations'); // Fetch first 4
   const featuredDestinationsData = destinationsResponse?.data || [];
 
   // --- Fetch Activities ---
