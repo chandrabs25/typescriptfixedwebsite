@@ -1,6 +1,6 @@
 
 'use client';
-export const runtime = 'edge';
+
 // Path: .\src\app\packages\[id]\book\page.tsx
 /// <reference types="styled-jsx" />
 

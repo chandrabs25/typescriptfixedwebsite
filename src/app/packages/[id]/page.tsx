@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin, Calendar, Clock, Users, Check, Info, ArrowRight, Loader2, AlertTriangle } from 'lucide-react';
 import { useFetch } from '@/hooks/useFetch';
-export const runtime = 'edge';
+
 // --- Interfaces ---
 interface ItineraryActivity {
     name: string;

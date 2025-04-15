@@ -1,6 +1,6 @@
 // Path: src/app/api/auth/me/route.ts
 export const dynamic = 'force-dynamic'; // Ensure dynamic execution for reading cookies/env vars
-export const runtime = 'edge';
+
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAuth, getJwtSecret } from '@/lib/auth'; // Import your verification function
 import * as jose from 'jose'; // Import jose for potential payload inspection if needed

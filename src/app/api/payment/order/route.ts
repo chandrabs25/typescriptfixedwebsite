@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 // Comment out imports specific to the disabled logic
 // import Razorpay from 'razorpay';
 // import { getDatabase } from '@/lib/database';
-export const runtime = 'edge'
+
 // Keep this if other routes need it, but it's likely safe to comment if unused now
 // export const dynamic = 'force-dynamic';
 

@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic'
 import { NextRequest, NextResponse } from 'next/server';
 import { getDatabase } from '@/lib/database'; // Use the correct function
-export const runtime = 'edge'
+
 // --- FIX: Remove Edge Runtime (if it was added back) ---
 // export const runtime = 'edge'; // Ensure this is removed for DB access
 
