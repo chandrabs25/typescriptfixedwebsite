@@ -10568,27 +10568,6 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/activities/route.js": {
-      "bytes": 3193,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
-          "kind": "require-call",
-          "original": "../../../webpack-runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
     ".open-next/server-functions/default/.next/server/app/api/auth/[...nextauth]/route.js": {
       "bytes": 1503,
       "imports": [
@@ -10636,8 +10615,29 @@
       ],
       "format": "cjs"
     },
+    ".open-next/server-functions/default/.next/server/app/api/activities/route.js": {
+      "bytes": 3193,
+      "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
+          "kind": "require-call",
+          "original": "../../../webpack-runtime.js"
+        }
+      ],
+      "format": "cjs"
+    },
     ".open-next/server-functions/default/.next/server/app/api/auth/me/route.js": {
-      "bytes": 3312,
+      "bytes": 3390,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
@@ -10673,7 +10673,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/api/auth/login/route.js": {
-      "bytes": 7978,
+      "bytes": 8056,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
@@ -10734,8 +10734,50 @@
       ],
       "format": "cjs"
     },
+    ".open-next/server-functions/default/.next/server/app/api/destinations/route.js": {
+      "bytes": 2805,
+      "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
+          "kind": "require-call",
+          "original": "../../../webpack-runtime.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/app/api/destinations/[id]/route.js": {
+      "bytes": 2838,
+      "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
+          "kind": "require-call",
+          "original": "../../../../webpack-runtime.js"
+        }
+      ],
+      "format": "cjs"
+    },
     ".open-next/server-functions/default/.next/server/app/api/bookings/[id]/route.js": {
-      "bytes": 3982,
+      "bytes": 4060,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
@@ -10761,48 +10803,6 @@
           "path": "node:util",
           "kind": "require-call",
           "external": true
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
-          "kind": "require-call",
-          "original": "../../../../webpack-runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/api/destinations/route.js": {
-      "bytes": 2805,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
-          "kind": "require-call",
-          "original": "../../../webpack-runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js": {
-      "bytes": 2806,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
@@ -10833,8 +10833,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/destinations/[id]/route.js": {
-      "bytes": 2838,
+    ".open-next/server-functions/default/.next/server/app/api/payment/verify/route.js": {
+      "bytes": 1458,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
@@ -10855,7 +10855,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/api/bookings/route.js": {
-      "bytes": 5205,
+      "bytes": 5283,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
@@ -10890,29 +10890,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/packages/route.js": {
-      "bytes": 4819,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
-          "kind": "require-call",
-          "original": "../../../webpack-runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/api/payment/verify/route.js": {
-      "bytes": 1458,
+    ".open-next/server-functions/default/.next/server/app/api/vendors/[id]/route.js": {
+      "bytes": 1536,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
@@ -10953,6 +10932,48 @@
       ],
       "format": "cjs"
     },
+    ".open-next/server-functions/default/.next/server/app/api/packages/route.js": {
+      "bytes": 4819,
+      "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
+          "kind": "require-call",
+          "original": "../../../webpack-runtime.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    ".open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js": {
+      "bytes": 2806,
+      "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
+          "kind": "require-call",
+          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
+          "kind": "require-call",
+          "original": "../../../../webpack-runtime.js"
+        }
+      ],
+      "format": "cjs"
+    },
     ".open-next/server-functions/default/.next/server/app/api/vendors/route.js": {
       "bytes": 2951,
       "imports": [
@@ -10974,29 +10995,49 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/vendors/[id]/route.js": {
-      "bytes": 1536,
+    ".open-next/server-functions/default/.next/server/app/destinations/page.js": {
+      "bytes": 7923,
       "imports": [
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/action-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/client/components/action-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/request-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/client/components/request-async-storage.external.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/static-generation-async-storage.external.js",
+          "kind": "require-call",
+          "original": "next/dist/client/components/static-generation-async-storage.external.js"
+        },
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
           "kind": "require-call",
           "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
         },
         {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js",
+          "path": "path",
           "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-route.runtime.prod.js"
+          "external": true
+        },
+        {
+          "path": "url",
+          "kind": "require-call",
+          "external": true
         },
         {
           "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
           "kind": "require-call",
-          "original": "../../../../webpack-runtime.js"
+          "original": "../../webpack-runtime.js"
         }
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/destinations/page.js": {
-      "bytes": 7923,
+    ".open-next/server-functions/default/.next/server/app/search-results/page.js": {
+      "bytes": 11318,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/action-async-storage.external.js",
@@ -11077,8 +11118,8 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/search-results/page.js": {
-      "bytes": 11318,
+    ".open-next/server-functions/default/.next/server/app/packages/[id]/page.js": {
+      "bytes": 16752,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/action-async-storage.external.js",
@@ -11113,7 +11154,7 @@
         {
           "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
           "kind": "require-call",
-          "original": "../../webpack-runtime.js"
+          "original": "../../../webpack-runtime.js"
         }
       ],
       "format": "cjs"
@@ -11155,47 +11196,6 @@
           "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
           "kind": "require-call",
           "original": "../../webpack-runtime.js"
-        }
-      ],
-      "format": "cjs"
-    },
-    ".open-next/server-functions/default/.next/server/app/packages/[id]/page.js": {
-      "bytes": 16752,
-      "imports": [
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/action-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/client/components/action-async-storage.external.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/request-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/client/components/request-async-storage.external.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/client/components/static-generation-async-storage.external.js",
-          "kind": "require-call",
-          "original": "next/dist/client/components/static-generation-async-storage.external.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js",
-          "kind": "require-call",
-          "original": "next/dist/compiled/next-server/app-page.runtime.prod.js"
-        },
-        {
-          "path": "path",
-          "kind": "require-call",
-          "external": true
-        },
-        {
-          "path": "url",
-          "kind": "require-call",
-          "external": true
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/webpack-runtime.js",
-          "kind": "require-call",
-          "original": "../../../webpack-runtime.js"
         }
       ],
       "format": "cjs"
@@ -11508,11 +11508,6 @@
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/vendors/page.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/api/activities/route.js",
-          "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/activities/route.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/api/auth/[...nextauth]/route.js",
           "kind": "require-call",
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/auth/[...nextauth]/route.js"
@@ -11521,6 +11516,11 @@
           "path": ".open-next/server-functions/default/.next/server/app/api/auth/register/route.js",
           "kind": "require-call",
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/auth/register/route.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/activities/route.js",
+          "kind": "require-call",
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/activities/route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/api/auth/me/route.js",
@@ -11538,24 +11538,9 @@
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/availability/route.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/api/bookings/[id]/route.js",
-          "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/bookings/[id]/route.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/api/destinations/route.js",
           "kind": "require-call",
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/destinations/route.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js",
-          "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/api/payment/order/route.js",
-          "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/payment/order/route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/api/destinations/[id]/route.js",
@@ -11563,14 +11548,14 @@
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/destinations/[id]/route.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/api/bookings/route.js",
+          "path": ".open-next/server-functions/default/.next/server/app/api/bookings/[id]/route.js",
           "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/bookings/route.js"
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/bookings/[id]/route.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/api/packages/route.js",
+          "path": ".open-next/server-functions/default/.next/server/app/api/payment/order/route.js",
           "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/packages/route.js"
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/payment/order/route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/api/payment/verify/route.js",
@@ -11578,14 +11563,9 @@
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/payment/verify/route.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/api/search/route.js",
+          "path": ".open-next/server-functions/default/.next/server/app/api/bookings/route.js",
           "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/search/route.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/api/vendors/route.js",
-          "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/vendors/route.js"
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/bookings/route.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/api/vendors/[id]/route.js",
@@ -11593,14 +11573,29 @@
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/vendors/[id]/route.js"
         },
         {
+          "path": ".open-next/server-functions/default/.next/server/app/api/search/route.js",
+          "kind": "require-call",
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/search/route.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/packages/route.js",
+          "kind": "require-call",
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/packages/route.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js",
+          "kind": "require-call",
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/vendors/route.js",
+          "kind": "require-call",
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/api/vendors/route.js"
+        },
+        {
           "path": ".open-next/server-functions/default/.next/server/app/destinations/page.js",
           "kind": "require-call",
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/destinations/page.js"
-        },
-        {
-          "path": ".open-next/server-functions/default/.next/server/app/user/bookings/page.js",
-          "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/user/bookings/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/search-results/page.js",
@@ -11608,14 +11603,19 @@
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/search-results/page.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/packages/page.js",
+          "path": ".open-next/server-functions/default/.next/server/app/user/bookings/page.js",
           "kind": "require-call",
-          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/packages/page.js"
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/user/bookings/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/packages/[id]/page.js",
           "kind": "require-call",
           "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/packages/[id]/page.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/packages/page.js",
+          "kind": "require-call",
+          "original": "/home/user/typescriptfixedwebsite/.open-next/server-functions/default/.next/server/app/packages/page.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/user/dashboard/page.js",
@@ -16661,71 +16661,71 @@
         ".open-next/server-functions/default/.next/server/app/vendors/page.js": {
           "bytesInOutput": 14794
         },
-        ".open-next/server-functions/default/.next/server/app/api/activities/route.js": {
-          "bytesInOutput": 4195
-        },
         ".open-next/server-functions/default/.next/server/app/api/auth/[...nextauth]/route.js": {
           "bytesInOutput": 2039
         },
         ".open-next/server-functions/default/.next/server/app/api/auth/register/route.js": {
           "bytesInOutput": 4430
         },
+        ".open-next/server-functions/default/.next/server/app/api/activities/route.js": {
+          "bytesInOutput": 4195
+        },
         ".open-next/server-functions/default/.next/server/app/api/auth/me/route.js": {
-          "bytesInOutput": 4810
+          "bytesInOutput": 4950
         },
         ".open-next/server-functions/default/.next/server/app/api/auth/login/route.js": {
-          "bytesInOutput": 11300
+          "bytesInOutput": 11440
         },
         ".open-next/server-functions/default/.next/server/app/api/availability/route.js": {
           "bytesInOutput": 5445
         },
-        ".open-next/server-functions/default/.next/server/app/api/bookings/[id]/route.js": {
-          "bytesInOutput": 5451
-        },
         ".open-next/server-functions/default/.next/server/app/api/destinations/route.js": {
-          "bytesInOutput": 3754
-        },
-        ".open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js": {
-          "bytesInOutput": 3727
-        },
-        ".open-next/server-functions/default/.next/server/app/api/payment/order/route.js": {
-          "bytesInOutput": 1988
+          "bytesInOutput": 3753
         },
         ".open-next/server-functions/default/.next/server/app/api/destinations/[id]/route.js": {
           "bytesInOutput": 3763
         },
-        ".open-next/server-functions/default/.next/server/app/api/bookings/route.js": {
-          "bytesInOutput": 7120
+        ".open-next/server-functions/default/.next/server/app/api/bookings/[id]/route.js": {
+          "bytesInOutput": 5592
         },
-        ".open-next/server-functions/default/.next/server/app/api/packages/route.js": {
-          "bytesInOutput": 6519
+        ".open-next/server-functions/default/.next/server/app/api/payment/order/route.js": {
+          "bytesInOutput": 1988
         },
         ".open-next/server-functions/default/.next/server/app/api/payment/verify/route.js": {
           "bytesInOutput": 1969
         },
-        ".open-next/server-functions/default/.next/server/app/api/search/route.js": {
-          "bytesInOutput": 5842
-        },
-        ".open-next/server-functions/default/.next/server/app/api/vendors/route.js": {
-          "bytesInOutput": 3836
+        ".open-next/server-functions/default/.next/server/app/api/bookings/route.js": {
+          "bytesInOutput": 7260
         },
         ".open-next/server-functions/default/.next/server/app/api/vendors/[id]/route.js": {
           "bytesInOutput": 2107
         },
+        ".open-next/server-functions/default/.next/server/app/api/search/route.js": {
+          "bytesInOutput": 5842
+        },
+        ".open-next/server-functions/default/.next/server/app/api/packages/route.js": {
+          "bytesInOutput": 6519
+        },
+        ".open-next/server-functions/default/.next/server/app/api/packages/[id]/route.js": {
+          "bytesInOutput": 3727
+        },
+        ".open-next/server-functions/default/.next/server/app/api/vendors/route.js": {
+          "bytesInOutput": 3836
+        },
         ".open-next/server-functions/default/.next/server/app/destinations/page.js": {
           "bytesInOutput": 10140
-        },
-        ".open-next/server-functions/default/.next/server/app/user/bookings/page.js": {
-          "bytesInOutput": 8671
         },
         ".open-next/server-functions/default/.next/server/app/search-results/page.js": {
           "bytesInOutput": 14116
         },
-        ".open-next/server-functions/default/.next/server/app/packages/page.js": {
-          "bytesInOutput": 18870
+        ".open-next/server-functions/default/.next/server/app/user/bookings/page.js": {
+          "bytesInOutput": 8671
         },
         ".open-next/server-functions/default/.next/server/app/packages/[id]/page.js": {
           "bytesInOutput": 20461
+        },
+        ".open-next/server-functions/default/.next/server/app/packages/page.js": {
+          "bytesInOutput": 18870
         },
         ".open-next/server-functions/default/.next/server/app/user/dashboard/page.js": {
           "bytesInOutput": 19124
@@ -16935,7 +16935,7 @@
           "bytesInOutput": 111753
         }
       },
-      "bytes": 7892852
+      "bytes": 7893412
     }
   }
 }

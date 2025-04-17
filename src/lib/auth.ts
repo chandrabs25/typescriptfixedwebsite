@@ -9,9 +9,15 @@ import * as jose from 'jose';
 
 // Get JWT secret from environment variable or use a fallback for development
 // In production, this should always be set in environment variables
-export const getJwtSecret = () => {
-  return new TextEncoder().encode('your_consistent_test_secret');
+export const getJwtSecret = (): Uint8Array => {
+  const secret = process.env.JWT_SECRET;
+  if (!secret) {
+    throw new Error('JWT_SECRET environment variable is not defined');
+  }
+  return new TextEncoder().encode(secret);
 };
+
+
 
 // Define the User structure expected by verifyAuth return and useAuth hook
 interface VerifiedUser {

@@ -18,7 +18,7 @@ directory = ".open-next/assets"
 [[d1_databases]]
 binding = "DB" 
 database_name = "database" 
-database_id = "96ed6730-6597-4715-85b0-7408ac403d31" 
+database_id = "46a2aacd-0b18-403f-8aa7-91506b4b312a" 
 
 # Optional: Add R2 binding if using Next.js Incremental Cache with R2
 # [[r2_buckets]]
@@ -31,5 +31,9 @@ database_id = "96ed6730-6597-4715-85b0-7408ac403d31"
 # service = "andaman-travel-worker" # MUST match the top-level 'name'
 
 # Add other bindings (KV, Queues, Environment Variables) as needed
-# [vars]
-# MY_ENV_VAR = "some_value"
+[vars]
+JWT_SECRET = "my-jwt-secret"
+
+[observability]
+enabled = true
+head_sampling_rate = 1

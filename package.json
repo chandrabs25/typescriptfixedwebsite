@@ -6,14 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "build:opennext": "npx opennextjs-cloudflare build",
-   
-    "db:migrate": "wrangler d1 migrations apply database",
-    "db:seed": "wrangler d1 execute database --file seed.sql",
-    "preview": "npm run build && npx opennextjs-cloudflare build && wrangler dev",
-    "deploy": "npm run build && npx opennextjs-cloudflare build && npm run db:migrate && npm run db:seed && wrangler deploy",
-    "cf-typegen": "wrangler types"
+    "db:migrate": "CLOUDFLARE_API_TOKEN=UBAL_h2gnDExIC4ogL3OF-gTmbTx43MOPtcZxl-V wrangler d1 migrations apply database --remote",
+    "db:reset": "CLOUDFLARE_API_TOKEN=UBAL_h2gnDExIC4ogL3OF-gTmbTx43MOPtcZxl-V wrangler d1 delete database",
+    "db:seed": "CLOUDFLARE_API_TOKEN=UBAL_h2gnDExIC4ogL3OF-gTmbTx43MOPtcZxl-V wrangler d1 execute database --file seed.sql --remote",
+    "preview": "npm run build && npx opennextjs-cloudflare build && CLOUDFLARE_API_TOKEN=UBAL_h2gnDExIC4ogL3OF-gTmbTx43MOPtcZxl-V wrangler dev",
+    "deploy": "npm run build && npx opennextjs-cloudflare build && CLOUDFLARE_API_TOKEN=UBAL_h2gnDExIC4ogL3OF-gTmbTx43MOPtcZxl-V wrangler deploy",
+    "cf-typegen": "CLOUDFLARE_API_TOKEN=UBAL_h2gnDExIC4ogL3OF-gTmbTx43MOPtcZxl-V wrangler types"
   },
-  "dependencies": {
+ "dependencies": {
     "@cloudflare/workers-types": "^4.20230518.0",
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-alert-dialog": "^1.1.6",
