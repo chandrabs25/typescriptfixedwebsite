@@ -13,8 +13,8 @@ pages_build_output_dir = ".vercel/output/static"
 # D1 Database binding
 [[d1_databases]]
 binding = "DB" 
-database_name = "database"
-database_id = "96ed6730-6597-4715-85b0-7408ac403d31"
+database_name = "data"
+database_id = "e37ef623-c1e9-410c-8352-f0d62bfce211"
 
 # KV Namespace binding (Example)
 # [[kv_namespaces]]
